@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Shared Components</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form class="form-container">
+    <h1>Sample Form</h1>
+    
+    <!-- Input Component -->
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+    </div>
+
+    <!-- Textarea Component -->
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Enter your message"></textarea>
+    </div>
+
+    <!-- Checkbox Component -->
+    <div class="form-group">
+      <label for="terms">
+        <input type="checkbox" id="terms" name="terms" /> I agree to the terms and conditions
+      </label>
+    </div>
+
+    <!-- Radio Component -->
+    <div class="form-group">
+      <label>Gender</label>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="gender" value="male" /> Male
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female" /> Female
+        </label>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-group">
+      <button type="submit" class="submit-btn">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
